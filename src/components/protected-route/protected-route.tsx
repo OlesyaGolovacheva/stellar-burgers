@@ -17,8 +17,6 @@ export const ProtectedRoute = ({ isAuth, children }: ProtectedRouteProps) => {
   const isDataLoading = useSelector(AuthCheckedSelector);
   const user = useSelector(UserSelector);
   const renderContent = () => {
-    console.log('auth', isAuth);
-    console.log('user', user);
     if (!isDataLoading) {
       return <Preloader />;
     }

@@ -14,10 +14,6 @@ export const Feed: FC = () => {
   const orders: TOrder[] = useSelector(ordersSelector);
   const isLoading = useSelector(isLoadingSelector);
 
-  if (!orders.length) {
-    return <Preloader />;
-  }
-
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getFeeds());
@@ -26,6 +22,10 @@ export const Feed: FC = () => {
   const handleGetFeeds = useCallback(() => {
     dispatch(getFeeds());
   }, []);
+
+  if (isLoading) {
+    return <Preloader />;
+  }
 
   return (
     <>
