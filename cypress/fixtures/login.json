@@ -1,0 +1,9 @@
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjdmYWJmMTE5ZDQ1MDAxYjUwYTEyMCIsImlhdCI6MTcyODIyMDA1OCwiZXhwIjoxNzI4MjIxMjU4fQ.yAkxbCoUQy13DFL4HVm50f7kJ4gY_qBxp-jJF8BmiWk",
+    "refreshToken": "a2a849a5ab98adb27ac1da45dc54bf0c0614a998a338e472155cfef47bb3fcd5b67307dd0bdac899",
+    "user": {
+        "email": "lesya2@mail.ru",
+        "name": "Lesya"
+    }
+}
